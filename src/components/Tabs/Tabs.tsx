@@ -48,6 +48,6 @@ const Tabs: React.FC<TabsProps> & {
   );
 };
 
-Tabs.Tab = ({ label, children }) => <React.Fragment>{children}</React.Fragment>;
+Tabs.Tab = ({ children }) => <React.Fragment>{children}</React.Fragment>;
 
 export default Tabs;

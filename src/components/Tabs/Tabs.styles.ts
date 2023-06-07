@@ -22,7 +22,7 @@ export const Tab = styled.li<TabProps>`
   cursor: pointer;
   background-color: ${({ active, theme }) =>
     active ? theme.primaryColor : "transparent"};
-  color: ${({ active, theme }) => (active ? "white" : "black")};
+  color: ${({ active }) => (active ? "white" : "black")};
 
   &:not(:last-child) {
     margin-right: 0.5em;

@@ -16,7 +16,7 @@ import Tabs from "./components/Tabs/Tabs";
 import Dropdown from "./components/Dropdown/Dropdown";
 import Tooltip from "./components/Tooltip/Tooltip";
 import ToggleSwitch from "./components/ToggleSwitch/ToggleSwitch";
-import professional from "./themes/professional";
+import themeFile from "./themes/index";
 import Avatar from "./components/Avatar/Avatar";
 import Image from "./assets/react.svg";
 import Badge from "./components/Badge/Badge";
@@ -28,17 +28,13 @@ import Typography from "./components/Typography/Typography";
 import Spacing from "./components/Spacing/Spacing";
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState(professional);
+  const [theme] = useState(themeFile.professional);
   const [isChecked, setIsChecked] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [showAlert, setShowAlert] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedDropdownOption, setSelectedDropdownOption] = useState("");
   const [toggleChecked, setToggleChecked] = useState(false);
-
-  const toggleTheme = () => {
-    // Add functionality to switch theme here.
-  };
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();

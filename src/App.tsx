@@ -5,7 +5,6 @@ import {
   SecondaryButton,
   TertiaryButton,
 } from "./components/Button/Button.styles";
-import { GlobalStyle } from "./utils";
 
 const App: React.FC = () => {
   return (
@@ -13,7 +12,6 @@ const App: React.FC = () => {
       <PrimaryButton disabled>Primary</PrimaryButton>
       <SecondaryButton>Secondary</SecondaryButton>
       <TertiaryButton disabled>Tertiary</TertiaryButton>
-      <GlobalStyle />
     </>
   );
 };
